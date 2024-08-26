@@ -19,10 +19,10 @@ export default function ConvexClientProvider({
   return (
     <ClerkProvider>
       <ConvexProviderWithClerk client={convex} useAuth={useAuth}>
-        <Authenticated>{children}</Authenticated>
-        <AuthLoading>
+        <>{children}</>
+        {/* <AuthLoading>
           <Loading />
-        </AuthLoading>
+        </AuthLoading> */}
       </ConvexProviderWithClerk>
     </ClerkProvider>
   );
